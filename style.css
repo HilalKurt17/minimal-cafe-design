@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: linear-gradient(180deg,#0b0701,#69594b);
+    text-align: center;
+    line-height: 5rem;
+    display:flex;
+   flex-direction:column;
+}
+
+header .bg-image-header{
+    background-image: url(images/coffeehouse3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem; /*40*html-font-size(10px here)*/
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    
+}
+
+div.header-content{
+    position: absolute;
+    color: white;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 25rem;
+    align-content: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a.readmore-btn{
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color:rosybrown;
+    border: 1px solid;
+    border-color:rosybrown;
+}
+
+a.readmore-btn:hover{
+    background-color: #d2b4b4;
+}
+#section-1{
+    color:white;
+    margin-top: 25rem;
+}
+#section-2{
+    color:white;
+    height: auto;
+    width: 100% !important;
+    font-size: 1.5rem;
+    background-color: transparent ;
+}
+
+div.body-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.margin-required{
+    margin-bottom: 50px !important;
+}
+.card-b{
+    background-color:dimgray;
+    border-radius: 15px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+.card-b h1{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.card-b img{
+    border-radius: 15px 15px 0 0;
+}
+li{
+    display:inline;
+    margin-left: 15px;
+}
+
+img{
+    vertical-align:bottom;
+}
+section{
+    overflow:auto;
+    
+}
+.section-header{
+    color:white;
+    font-size: 3rem;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+    vertical-align: bottom;
+    margin-top: 10px;
+}
+
+a.sub-title-h, a.sub-title-cb, a.sub-title-sd{
+    color:white;
+    margin-top:0px;
+    padding-top:0px;
+    margin-right:auto;
+    margin-left: auto;
+    font-weight: normal;
+    font-size:2rem;
+}
+
+/*scroll bars*/
+.body-content::-webkit-scrollbar
+{
+    display:none;
+}
+
+.body-content{
+    scrollbar-width: none;
+}
+
+hr.section-h-hr{
+    border:0px;
+    border-top: 1px solid white;
+    height: 0.2px;
+    opacity: 0.3;
+}
+
+li.sub-b-li{
+    display: block;
+}
+ul{
+    display:inline;
+}
+
+table{
+    color:white;
+    display:inline;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    align-self:center;
+}
+
+th{
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom:1px double rgba(255,255,255,0.1);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+td.special{
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom:none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+
+th.add-border{
+    border-right:1px double rgba(255,255,255,0.1);
+    
+}
+
+td.add-border{
+    border-right:0.5px double rgba(255,255,255,0.1);
+    
+}
+
+a.sub-title-h:active{
+    color:#d2b4b4;
+}
+
+#section-4{
+    margin-top: 20px;
+}
