@@ -2,14 +2,17 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Arial', 'sans-serif' !important; 
+    line-height: 20px;
+    
 }
+
 html{
-    font-size: 10px;
+    font-size: 12px;
 }
 body{
     background: linear-gradient(180deg,#0b0701,#69594b);
     text-align: center;
-    line-height: 5rem;
     display:flex;
    flex-direction:column;
 }
@@ -18,7 +21,7 @@ header .bg-image-header{
     background-image: url(images/coffeehouse3.jpg);
     background-size: cover;
     background-position: center;
-    height: 25rem; /*40*html-font-size(10px here)*/
+    height: 25rem; /*25*html-font-size(10px here)*/
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -29,12 +32,14 @@ header .bg-image-header{
 div.header-content{
     position: absolute;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1rem;
     width: 100%;
     height: 25rem;
     align-content: center;
 }
-
+div.header-content h1{
+    font-size: 2rem !important;
+}
 a{
     color: black;
     text-decoration: none;
@@ -60,40 +65,50 @@ a.readmore-btn:hover{
     color:white;
     height: auto;
     width: 100% !important;
-    font-size: 1.5rem;
     background-color: transparent ;
 }
 
 div.body-content{
     display: flex;
-    justify-content: center;
+    flex-wrap:nowrap;
     margin-bottom: 0px;
 }
 
-.margin-required{
-    margin-bottom: 50px !important;
-}
 .card-b{
     background-color:dimgray;
-    border-radius: 15px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 50px;
+    border-radius: 0.5rem;
+    margin-left:1rem;
+    margin-right:1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .card-b h1{
-    font-size: 1.5rem;
+    font-size: 1rem !important;
     font-weight: lighter;
+    
 }
 .card-b img{
-    border-radius: 15px 15px 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
-li{
-    display:inline;
-    margin-left: 15px;
+div.body-content.overflow{
+    width:100%;
+    overflow-x:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div.card-b{
+    display:inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color:white;
+    max-width:7rem !important;
+    
 }
 
 img{
     vertical-align:bottom;
+    width: 7rem;
+    height: 7rem;
 }
 section{
     overflow:auto;
@@ -101,11 +116,11 @@ section{
 }
 .section-header{
     color:white;
-    font-size: 3rem;
     margin-bottom:0px;
     padding-bottom: 0px;
     vertical-align: bottom;
     margin-top: 10px;
+    font-size: 2rem;
 }
 
 a.sub-title-h, a.sub-title-cb, a.sub-title-sd{
@@ -115,7 +130,7 @@ a.sub-title-h, a.sub-title-cb, a.sub-title-sd{
     margin-right:auto;
     margin-left: auto;
     font-weight: normal;
-    font-size:2rem;
+    font-size: 1.3rem;
 }
 
 /*scroll bars*/
@@ -133,6 +148,7 @@ hr.section-h-hr{
     border-top: 1px solid white;
     height: 0.2px;
     opacity: 0.3;
+    margin-bottom:0.4rem;
 }
 
 li.sub-b-li{
@@ -146,7 +162,7 @@ table{
     color:white;
     display:inline;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
     justify-content: center;
     align-self:center;
 }
@@ -185,4 +201,79 @@ a.sub-title-h:active{
 
 #section-4{
     margin-top: 20px;
+}
+
+#section-6{
+    background-color:lightgrey;
+    font-size: 1rem;
+}
+#section-6::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+#section-6 p{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+#section-6 h1{
+    font-size: 2rem !important;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#info{
+    margin-bottom: 20px;
+}
+
+#about-us{
+    background-color:silver;
+    padding-bottom: 20px;
+    text-align:center;
+}
+
+#contact-us{
+    background-color:gray;
+    padding-bottom: 20px;
+    text-align:center;
+}
+.box{
+    float: left;
+    width: 50%;
+
+}
+footer{
+    background-color:black;
+    color: white;
+    padding-bottom:20px;
+    padding-top:20px;
+    text-align:center;
+    font-size: 1rem !important;
+}
+
+.margin-required{
+    margin-bottom:1rem;
+    margin-top:0.6rem;
+}
+
+@media screen and (min-width: 768px){
+    html{
+        font-size: 13px !important;
+    }
+    div.body-content{
+        justify-content:center;
+    }
+}
+@media screen and (min-width:1024px){
+    html{
+        font-size: 14px !important;
+    }
+
+    .box{
+        float:none;
+        width: 100%;
+    }
+    div.body-content{
+        justify-content:center;
+    }
 }
